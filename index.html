@@ -1,15 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- h1のフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Luxurious+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
     <title>Pixie Spice</title>
   </head>
   <body>
-    <h1>Hello</h1>
-    <h2>Worlds</h2>
-    <h3>hi</h3>
-    <p>こんにちは</p>
+    <header>
+      <div id="header">
+        <h1 id="title">Pixie Spice</h1>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#">RECIPE</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">LOG IN</a></li>
+            <li><a href="#">CART</a></li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <form>
+            <input type="text" placeholder="検索..." />
+            <button type="submit">検索</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2 class="main-title">マサラスパイスを使った料理</h2>
+      <article class="recipe">
+        <img class="recipe-image" src="cookie.jpg" alt="魔法のクッキー" />
+        <h3 class="recipe-title">マサラスパイス入り魔法のクッキー</h3>
+        <p class="recipe-description">材料：</p>
+        <ul class="recipe-list">
+          <li>ambikaミートマサラミックススパイス ？g</li>
+          <li>バター 100g</li>
+          <li>砂糖 80g</li>
+          <li>小麦粉 150g</li>
+          <li>卵 1個</li>
+        </ul>
+        <p class="recipe-description">作り方：</p>
+        <ol class="recipe-steps">
+          <li>バターと砂糖を混ぜ合わせ、白っぽくなるまで泡立てます。</li>
+          <li>卵を加えて混ぜます。</li>
+          <li>小麦粉と魔法の粉末を加え、さっくりと混ぜます。</li>
+          <li>生地を冷蔵庫で30分ほど休ませます。</li>
+          <li>生地を丸めて、オーブンで15分焼きます。</li>
+          <li>完成！</li>
+        </ol>
+      </article>
+    </main>
+    <footer>
+      <p class="footer-text">© 魔法レシピサイト</p>
+    </footer>
   </body>
 </html>
