@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
     <!-- h1のフォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,33 +16,46 @@
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Pixie Spice</title>
   </head>
   <body>
     <header>
       <div id="header">
-        <h1 id="title">Pixie Spice</h1>
+        <a href="index.html">
+          <h1 id="title">Pixie Spice</h1>
+        </a>
         <nav>
           <ul class="nav-list">
-            <li><a href="#">RECIPE</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">PRODUCTS</a></li>
-            <li><a href="#">LOG IN</a></li>
-            <li><a href="#">CART</a></li>
+            <li><a href="recipe.html">RECIPE</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="signin.html">SIGN IN</a></li>
+            <li><a href="signup.html">SIGN UP</a></li>
           </ul>
         </nav>
         <div class="search-bar">
           <form>
-            <input type="text" placeholder="検索..." />
+            <input type="text" placeholder="レシピを検索..." />
             <button type="submit">SEARCH</button>
           </form>
         </div>
       </div>
     </header>
     <main>
-      <h2 class="main-title">マサラスパイスを使った料理</h2>
+      <h2 class="main-title">未定</h2>
       <article class="recipe">
-        <img class="recipe-image" src="cookie.jpg" alt="魔法のクッキー" />
+        <img
+          class="未定のイラスト"
+          src="data:image/jpeg;base64,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"
+          alt="魔法のクッキー"
+        />
         <h3 class="recipe-title">マサラスパイス入り魔法のクッキー</h3>
         <p class="recipe-description">材料：</p>
         <ul class="recipe-list">
